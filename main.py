@@ -17,6 +17,7 @@ all_links = open('all_links.txt')
 
 links = all_links.readlines()
 
-download_video(links[0])
+for i in links:
+    download_video(i)
 
 all_links.close()
