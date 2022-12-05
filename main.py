@@ -1,5 +1,5 @@
-import urllib
 import json
+from get_all_links import return_all_videos
 
 configfile = open('config.json')
 
@@ -9,3 +9,5 @@ configfile.close()
 
 yt_api_key = configjson['key']
 channel_id = configjson['channel_id']
+
+#return_all_videos(yt_api_key, channel_id)
