@@ -13,4 +13,10 @@ channel_id = configjson['channel_id']
 
 #return_all_videos(yt_api_key, channel_id)
 
-download_video()
+all_links = open('all_links.txt')
+
+links = all_links.readlines()
+
+download_video(links[0])
+
+all_links.close()
